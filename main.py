@@ -3,6 +3,7 @@ from week10.Region import Region
 from week10.Metric import Metric
 from week10.DataMerger import DataMerger
 from wekk11.TotalTable import TotalTable
+from week12.Sort import Sort
 #1zadanie
 # def load_metrics(filename):
 #     metrics = []
@@ -29,7 +30,11 @@ from wekk11.TotalTable import TotalTable
 #     for row in result:
 #         print(row)
 #2zadanie
-metrics_df = pd.read_csv("week10/metrics.csv")
-regions_df = pd.read_csv("week10/regions.csv")
-start = TotalTable
-print(start.merge_metrics_with_regions(metrics_df,regions_df))
+# metrics_df = pd.read_csv("week10/metrics.csv")
+# regions_df = pd.read_csv("week10/regions.csv")
+# start = TotalTable
+# print(start.merge_metrics_with_regions(metrics_df,regions_df))
+#4ZADANIE
+start = Sort("week9\metrics.csv")
+start.srav()
+start.writer()
