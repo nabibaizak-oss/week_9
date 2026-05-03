@@ -7,8 +7,9 @@ class Sort:
     def writer(self):
         self.data.to_csv("top5.csv", index = False, encoding = "utf-8")
 
-
-
+start = Sort("../wekk11/merged_results.csv")
+start.srav()
+start.writer()
 
 
 
